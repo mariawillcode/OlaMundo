@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroPensado = Math.round(Math.random()*10);
+    var chute = parseInt(prompt("Digite seu chute!")); //se eu quero ler sempre como número, deve haver o parseInt SEMPRE! e o prompt vai ler o número entrado pelo usuário. PROMPT É SEMPRE EM STRING E PARSEINT É SEMPRE EM NÚMERO
+
+    if (chute == numeroPensado) {
+        document.write("Você acertou!")
+
+    } else { //else é SENÃO
+           mostra("Você errou, o número pensado foi " + numeroPensado)   
+    }
+
+</script>
